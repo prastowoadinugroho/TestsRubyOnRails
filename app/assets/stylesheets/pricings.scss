@@ -1,0 +1,48 @@
+// Place all the styles related to the pricings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 200px;
+
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#box1 {
+    border-right: 2px solid #007BFF;
+    vertical-align: middle;
+}
+
+#box2 {
+    border-right: 2px solid #007BFF;
+}
+
+#boxx {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    border: 2px solid #DFDFDF;
+}
+
+#advertise {
+    display: block;
+}

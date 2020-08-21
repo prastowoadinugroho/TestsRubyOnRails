@@ -1,0 +1,68 @@
+<div class="price container">
+  <div class="row">
+    <div class="col-3 mt-5">
+    </div>
+    <div class="col-5 mt-5">
+      <p class="h3">Get Started with a free account</p>
+    </div>
+
+    <div class="col-4 mt-5">
+      <button class="btn btn-primary">SIGN UP FOR FREE OR LOGIN</button>
+    </div>
+  </div>
+
+  <div class="row ml-4">
+    <div class="col-12 mt-5 ">
+      <p class="h4 text-center">Choose the Right Plan for You</p>
+    </div>
+  </div>
+
+  <div id="show">
+  <div class="row justify-content-md-center mt-4">
+    <div class="col col-lg-1 mr-3">
+      <button class="marketers btn btn-primary" data-id="1">Marketers</button>
+    </div>
+    <div class="col col-lg-1 mr-4">
+      <button class="advertiser btn btn-primary" data-id="2">Advertisers</button>
+    </div>
+    <div class="col col-lg-1">
+      <button class="freelancers btn btn-primary" data-id="3">Freelancers</button>
+    </div>
+  </div>
+  </div>
+
+  <div id='1' style="display:none">
+    <%= render 'marketers' %>
+  </div>
+
+  <div id="2" style="display:none">
+    <%= render 'advertiser' %>
+  </div>
+
+  <div id="3" style="display:none">
+    <%= render 'freelancers' %>
+  </div>
+ 
+</div>
+</div>
+
+<script>
+$('.freelancers').click(function() {
+    $("#1").css("display", "none");
+    $("#2").css("display", "none");
+    $("#3").toggle();
+})
+
+$('.advertiser').click(function() {
+    $("#3").css("display", "none");
+    $("#1").css("display", "none");
+    $("#2").toggle();
+})
+
+$('.marketers').click(function() {
+    $("#2").css("display", "none");
+    $("#3").css("display", "none");
+    $("#1").toggle();
+});
+
+</script>

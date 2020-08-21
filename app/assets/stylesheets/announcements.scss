@@ -1,0 +1,29 @@
+// Place all the styles related to the announcements controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.area {
+    height: 100vh;
+    display: block;
+    margin: 30px;
+}
+
+.content {
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text-1 {
+    color: #538B01;
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+}
+
+.text-2 {
+    color: #538B01;
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+}

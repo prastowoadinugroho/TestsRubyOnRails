@@ -1,0 +1,36 @@
+// Place all the styles related to the partnerships controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.price {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#boxPartner {
+    background: #32AF7C;
+    height: 100vh;
+    padding: 50px;
+}
+
+#welcome {
+    color: white;
+    letter-spacing: 2px;
+}
+
+#form {
+    border-radius: 30px;
+}
+
+#box {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+#titleForm {
+    color: #3F353B;
+}

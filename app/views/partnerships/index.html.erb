@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class='container'>
+  <p class="h3 mb-4">Partnerships</p>
+  <div class='col-12'>
+    
+    <%= link_to 'New Partnership', new_partnership_path, class: 'btn btn-primary mb-3' %>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th colspan="3">Action</th>
+        </tr>
+      </thead>
+
+  <tbody>
+    <% @partnerships.each do |partnership| %>
+      <tr>
+        <td><%= partnership.first_name %></td>
+        <td><%= partnership.last_name %></td>
+        <td><%= partnership.email %></td>
+        <td><%= partnership.phone %></td>
+        <td><%= link_to 'Show', partnership %></td>
+        <td><%= link_to 'Edit', edit_partnership_path(partnership) %></td>
+        <td><%= link_to 'Destroy', partnership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+<br>
+
+

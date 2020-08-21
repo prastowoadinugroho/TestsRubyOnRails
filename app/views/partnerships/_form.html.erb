@@ -1,0 +1,77 @@
+
+    <div class="row ">
+
+      <div id ="welcome" class="col-sm-3 align-self-center">
+        <p class="h3 text-center">Welcome<p>
+        <p class="text-center">Join our<br/>community<p>
+      </div>
+
+
+      <div class="col-sm-9">
+          <div id="box">
+              <h4 id="titleForm" class="text-center mt-2">Let Us Know How We Can Help</h4>
+              <div class="container">
+              <div class="row mt-4">
+                <div class="col">
+                <%= form_for @partnership do |form| %>
+                <div class="form-group">
+                  <%= form.text_field :first_name, :required => true ,placeholder: 'First Name*', class: "form-control" %>
+                </div>
+
+                <div class="form-group">
+                  <%= form.text_field :email ,placeholder: 'Email*', :required => true,class: "form-control" %>
+                </div>
+
+                <div class="form-group">
+                  <%= form.text_field :job_title ,placeholder: 'Title*',:required => true ,class: "form-control" %>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <%= form.text_field :last_name ,placeholder: 'Last Name*',:required => true ,class: "form-control"%>
+                  </div>
+
+                  <div class="form-group">
+                    <%= form.text_field :phone ,placeholder: 'Phone', class: "form-control"%>
+                  </div>
+
+                  <div class="form-group">
+                    <%= form.text_field :company ,placeholder: 'Company*',:required => true ,class: "form-control"%>
+                  </div>
+                </div>            
+              </div>
+              <div class="form-group">
+                  <%= form.radio_button :solution, '1' %>
+                  <%= label :solution, 'Supplier' %>
+
+                  <%= form.radio_button :solution, '2' %>
+                  <%= label :solution, 'User' %>
+
+                  <%= form.radio_button :solution, '3' %>
+                  <%= label :solution, 'Partner' %>
+
+                  <%= form.radio_button :solution, '4' %>
+                  <%= label :solution, 'Influencer' %>
+
+                  <br/>
+
+                  <%= form.radio_button :solution, '5' %>
+                  <%= label :solution, 'Other' %>
+              </div>
+              <div class="form-group">
+                <%= form.text_area :message ,size: "30",placeholder: 'Message', class: "form-control"%>
+              </div>
+
+              <div class="form-group">
+                <%= form.submit "Submit Request", class: "btn btn-primary" %>
+              </div>  
+              </div>
+              <% end %>
+          </div>
+      </div>
+      
+      
+
+    </div>
+
